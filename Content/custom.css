@@ -4,23 +4,26 @@
 /*--- login page css ---*/
 .loginFormContainer{
     padding: 1% !important;
+    margin-bottom: 3.5%;
 }
 .loginForm{
-    background-color: #666;
+    background-color: lightgray;
     padding: 0%;
 }
 .loginFormMainBody{
     padding: 0px;
 }
+.loginFormMainBody h2{
+    color: #039FDA;
+}
 .loginFormHeader{
-    background-color: green;
+    background-color: #039FDA;
     padding: 1.5%;
 }
 .loginFormMainBodyLeft{
-    background-color: yellow;
+    background-color: lightgray;
     padding-bottom: 2%;
 }
 .loginFormMainBodyRight{
-    background-color: orange;
     padding-bottom: 2%;
 }

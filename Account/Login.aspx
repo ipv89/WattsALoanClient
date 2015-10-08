@@ -47,15 +47,20 @@
                         </asp:Login>
                         <br />
                         <p>
-                            <asp:HyperLink runat="server" ID="HyperLink1" ViewStateMode="Disabled">Register</asp:HyperLink>
+                            <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Register</asp:HyperLink>
+
                             if you don't have an account.
                         </p>
                     </div>
 
                     <%-- login form right side --%>
                     <div class="col-lg-6 loginFormMainBodyRight">
-                        <h2>Use another service to log in.</h2>
-                        <uc:OpenAuthProviders runat="server" ID="OpenAuthProviders1" />
+                        <%--<h2>Use another service to log in.</h2>
+                        <uc:OpenAuthProviders runat="server" ID="OpenAuthProviders1" />--%>
+                        <section id="socialLoginForm">
+                            <h2>Use another service to log in.</h2>
+                            <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
+                        </section>
                     </div>
                 </div>
             </div>
@@ -63,13 +68,13 @@
     </div>
 
 
-    <hgroup class="title">
+    <%--<hgroup class="title">
         <h1><%: Title %>.</h1>
-    </hgroup>
+    </hgroup>--%>
 
     <section id="loginForm">
-        <h2>Use a local account to log in.</h2>
-        <asp:Login runat="server" ViewStateMode="Disabled" RenderOuterTable="false">
+        <%--<h2>Use a local account to log in.</h2>--%>
+        <%--<asp:Login runat="server" ViewStateMode="Disabled" RenderOuterTable="false">
             <LayoutTemplate>
                 <p class="validation-summary-errors">
                     <asp:Literal runat="server" ID="FailureText" />
@@ -95,15 +100,12 @@
                     <asp:Button runat="server" CommandName="Login" Text="Log in" />
                 </fieldset>
             </LayoutTemplate>
-        </asp:Login>
-        <p>
+        </asp:Login>--%>
+        <%--<p>
             <asp:HyperLink runat="server" ID="RegisterHyperLink" ViewStateMode="Disabled">Register</asp:HyperLink>
             if you don't have an account.
-        </p>
+        </p>--%>
     </section>
 
-    <section id="socialLoginForm">
-        <h2>Use another service to log in.</h2>
-        <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
-    </section>
+
 </asp:Content>
