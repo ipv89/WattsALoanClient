@@ -2,28 +2,62 @@
     font-family: Calibri;
 }
 /*--- login page css ---*/
-.loginFormContainer{
+.loginFormContainer {
     padding: 1% !important;
+    margin-top: 3%;
     margin-bottom: 3.5%;
 }
-.loginForm{
+
+.loginForm {
     background-color: lightgray;
     padding: 0%;
 }
-.loginFormMainBody{
+
+.loginFormMainBody {
     padding: 0px;
 }
-.loginFormMainBody h2{
-    color: #039FDA;
-}
-.loginFormHeader{
+
+    .loginFormMainBody h2 {
+        color: #039FDA;
+    }
+
+.loginFormHeader {
     background-color: #039FDA;
     padding: 1.5%;
 }
-.loginFormMainBodyLeft{
+
+.loginFormMainBodyLeft {
     background-color: lightgray;
     padding-bottom: 2%;
 }
-.loginFormMainBodyRight{
+
+.loginFormMainBodyRight {
     padding-bottom: 2%;
+}
+
+/*--- manager_home css ---*/
+.managerOptionDivContainer{
+    margin-top: 10% !important;
+}
+.managerOptionDivHolder {
+    background-color: lightgray;
+    padding: 0px !important;
+    border-radius: 5px;
+    height: 250px !important;
+}
+
+.managerOptionDivHeader {
+    padding: 3%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #039FDA;
+}
+.managerOptionDivHolder{
+    text-align: center;
+}
+.managerOptionDivDesc{
+    padding-top: 10% !important;
+}
+.managerOptionDivHolder i{
+    font-size: 2.5em !important;
 }

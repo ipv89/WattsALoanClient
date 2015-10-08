@@ -59,6 +59,7 @@
                         <uc:OpenAuthProviders runat="server" ID="OpenAuthProviders1" />--%>
                         <section id="socialLoginForm">
                             <h2>Use another service to log in.</h2>
+                            <br />
                             <uc:OpenAuthProviders runat="server" ID="OpenAuthLogin" />
                         </section>
                     </div>

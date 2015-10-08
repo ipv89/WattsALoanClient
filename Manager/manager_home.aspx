@@ -4,37 +4,40 @@
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
-    <div class="container">
+    <div class="container managerOptionDivContainer">
         <div class="col-lg-12">
             <div class="col-lg-4">
-                <div class="col-lg-12" style="background-color: lightgray; padding: 0px; border-radius: 5px;">
-                    <div class="col-lg-12" style="padding: 3%; border-top-left-radius: 5px; border-top-right-radius: 5px; background-color: #999;">
-                        <h3 class="panel-title">New Employee</h3>
+                <div class="col-lg-12 managerOptionDivHolder">
+                    <div class="col-lg-12 managerOptionDivHeader">
+                        <h3>New Employee</h3>
                     </div>
-                    <div class="col-lg-12" style="padding: 10%;">
+                    <div class="col-lg-12 managerOptionDivDesc">
                         <h4>Click here to create a new employee</h4>
+                        <i class="fa fa-plus-circle"></i>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="col-lg-12" style="background-color: lightgray; padding: 0px; border-radius: 5px;">
-                    <div class="col-lg-12" style="padding: 3%; border-top-left-radius: 5px; border-top-right-radius: 5px; background-color: #999;">
-                        <h3 class="panel-title">Edit Employee</h3>
+                <div class="col-lg-12 managerOptionDivHolder">
+                    <div class="col-lg-12 managerOptionDivHeader">
+                        <h3>Edit Employee</h3>
                     </div>
-                    <div class="col-lg-12" style="padding: 10%;">
+                    <div class="col-lg-12 managerOptionDivDesc">
                         <h4>Click here to edit an existing employee</h4>
+                        <i class="fa fa-edit"></i>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="col-lg-12" style="background-color: lightgray; padding: 0px; border-radius: 5px;">
-                    <div class="col-lg-12" style="padding: 3%; border-top-left-radius: 5px; border-top-right-radius: 5px; background-color: #999;">
-                        <h3 class="panel-title">New Loan Type</h3>
+                <div class="col-lg-12 managerOptionDivHolder">
+                    <div class="col-lg-12 managerOptionDivHeader">
+                        <h3>New Loan Type</h3>
                     </div>
-                    <div class="col-lg-12" style="padding: 10%;">
+                    <div class="col-lg-12 managerOptionDivDesc">
                         <h4>Click here to create a new loan type</h4>
+                        <i class="fa fa-plus"></i>
                     </div>
                 </div>
             </div>

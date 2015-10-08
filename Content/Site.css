@@ -121,7 +121,7 @@ footer {
     background-color: #e2e2e2;
     font-size: .8em;
     height: 100px;
-    margin-top: 25% !important;
+    margin-top: 10% !important;
 }
 
 
@@ -423,7 +423,7 @@ fieldset {
             width: auto;
         }
         
-    input[type="submit"],
+    /*input[type="submit"],
     input[type="button"],
     button {
         background-color: #d3dce0;
@@ -434,7 +434,7 @@ fieldset {
         padding: 7px;
         margin-right: 8px;
         width: auto;
-    }
+    }*/
 
     td input[type="submit"],
     td input[type="button"],
