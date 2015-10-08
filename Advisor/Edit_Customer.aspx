@@ -12,10 +12,10 @@
             <div class="col-lg-12">
 
                 <div class="col-lg-12">
-                    <div class="col-lg-2">
+                    <div class="col-lg-3">
                         <label for="cust_id">Customer ID: </label>
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-9">
                         <asp:TextBox ID="cust_id" CssClass="form-control" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" Text="*" ForeColor="Red" ControlToValidate="cust_id">
                         </asp:RequiredFieldValidator>
@@ -23,10 +23,10 @@
                 </div>
 
                 <div class="col-lg-12">
-                    <div class="col-lg-2">
+                    <div class="col-lg-3">
                         <label for="Fullname">Full Name:</label>
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-9">
                         <asp:TextBox ID="full_name_text" CssClass="form-control" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="E-mail address is required" Text="*" ForeColor="Red" ControlToValidate="full_name_text">
                         </asp:RequiredFieldValidator>
@@ -34,10 +34,10 @@
                 </div>
 
                 <div class="col-lg-12">
-                    <div class="col-lg-2">
+                    <div class="col-lg-3">
                         <label for="Address">Billing Address:</label>
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-9">
                         <asp:TextBox ID="Address" CssClass="form-control" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" Text="*" ForeColor="Red" ControlToValidate="Address">
                         </asp:RequiredFieldValidator>
@@ -45,10 +45,10 @@
                 </div>
 
                 <div class="col-lg-12">
-                    <div class="col-lg-2">
+                    <div class="col-lg-3">
                         <label for="City">City:</label>
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-9">
                         <asp:TextBox ID="City" CssClass="form-control" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" Text="*" ForeColor="Red" ControlToValidate="City">
                         </asp:RequiredFieldValidator>
@@ -56,10 +56,10 @@
                 </div>
 
                 <div class="col-lg-12">
-                    <div class="col-lg-2">
+                    <div class="col-lg-3">
                         <label for="State">State:</label>
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-9">
                         <asp:TextBox ID="State" CssClass="form-control" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" Text="*" ForeColor="Red" ControlToValidate="State">
                         </asp:RequiredFieldValidator>
@@ -67,10 +67,10 @@
                 </div>
 
                 <div class="col-lg-12">
-                    <div class="col-lg-2">
+                    <div class="col-lg-3">
                         <label for="Zip">Zip Code:</label>
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-9">
                         <asp:TextBox ID="Zip" CssClass="form-control" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" Text="*" ForeColor="Red" ControlToValidate="Zip">
                         </asp:RequiredFieldValidator>
@@ -78,10 +78,10 @@
                 </div>
 
                 <div class="col-lg-12">
-                    <div class="col-lg-2">
+                    <div class="col-lg-3">
                         <label for="Email">Email</label>
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-9">
                         <asp:TextBox ID="Email" CssClass="form-control" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" Text="*" ForeColor="Red" ControlToValidate="Email">
                         </asp:RequiredFieldValidator>
