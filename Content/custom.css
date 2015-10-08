@@ -1,0 +1,26 @@
+﻿body {
+    font-family: Calibri;
+}
+/*--- login page css ---*/
+.loginFormContainer{
+    padding: 1% !important;
+}
+.loginForm{
+    background-color: #666;
+    padding: 0%;
+}
+.loginFormMainBody{
+    padding: 0px;
+}
+.loginFormHeader{
+    background-color: green;
+    padding: 1.5%;
+}
+.loginFormMainBodyLeft{
+    background-color: yellow;
+    padding-bottom: 2%;
+}
+.loginFormMainBodyRight{
+    background-color: orange;
+    padding-bottom: 2%;
+}
