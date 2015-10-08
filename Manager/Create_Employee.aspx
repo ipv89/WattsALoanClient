@@ -6,7 +6,7 @@
         <h2>Create Employee</h2>
     </div>
 
-    <div class="col-lg-12 createEmpContainer">
+    <div class="col-lg-12 createEmpContainer createEmployeeMainContainer">
 
         <div class="container createEmpContainerInner">
             <div class="col-lg-12">
@@ -71,11 +71,11 @@
         </div>
     </div>
 
-    <div class="row">
+    <%--<div class="row">--%>
 
         <%--<div class="col-md-2 col-md-offset-5">--%>
 
-        <form class="form-inline" role="form">
+        <%--<form class="form-inline" role="form">--%>
             <%--<div class="form-group">
                     <label for="Number">Number:</label>
                     <asp:TextBox ID="Number" CssClass="form-control" runat="server"></asp:TextBox>
@@ -102,8 +102,8 @@
                 </div>--%>
 
             <%--<asp:Button CssClass="btn btn-success btn-manager btn-insert" type="submit" ID="insert" runat="server" Text="Insert" OnClick="new_employee" />--%>
-        </form>
-    </div>
+        <%--</form>
+    </div>--%>
     <%--</div>--%>
 
     <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
