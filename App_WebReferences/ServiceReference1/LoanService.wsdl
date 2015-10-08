@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="LoanService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:50780/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:50780/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILoanService_DeleteEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmployee" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_DeleteEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_InsertCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_InsertCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_InsertEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEmployee" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_InsertEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_InsertLoan_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLoan" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_InsertLoan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLoanResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_InsertLoanAllocation_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLoanAllocation" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_InsertLoanAllocation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertLoanAllocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_SpecifyCurrentBalance_InputMessage">
+    <wsdl:part name="parameters" element="tns:SpecifyCurrentBalance" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_SpecifyCurrentBalance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SpecifyCurrentBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_UpdateCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomer" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_UpdateCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_UpdateEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmployee" />
+  </wsdl:message>
+  <wsdl:message name="ILoanService_UpdateEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILoanService">
+    <wsdl:operation name="DeleteEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoanService/DeleteEmployee" message="tns:ILoanService_DeleteEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoanService/DeleteEmployeeResponse" message="tns:ILoanService_DeleteEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoanService/InsertCustomer" message="tns:ILoanService_InsertCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoanService/InsertCustomerResponse" message="tns:ILoanService_InsertCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoanService/InsertEmployee" message="tns:ILoanService_InsertEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoanService/InsertEmployeeResponse" message="tns:ILoanService_InsertEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLoan">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoanService/InsertLoan" message="tns:ILoanService_InsertLoan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoanService/InsertLoanResponse" message="tns:ILoanService_InsertLoan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertLoanAllocation">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoanService/InsertLoanAllocation" message="tns:ILoanService_InsertLoanAllocation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoanService/InsertLoanAllocationResponse" message="tns:ILoanService_InsertLoanAllocation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SpecifyCurrentBalance">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoanService/SpecifyCurrentBalance" message="tns:ILoanService_SpecifyCurrentBalance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoanService/SpecifyCurrentBalanceResponse" message="tns:ILoanService_SpecifyCurrentBalance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoanService/UpdateCustomer" message="tns:ILoanService_UpdateCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoanService/UpdateCustomerResponse" message="tns:ILoanService_UpdateCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILoanService/UpdateEmployee" message="tns:ILoanService_UpdateEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILoanService/UpdateEmployeeResponse" message="tns:ILoanService_UpdateEmployee_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILoanService" type="tns:ILoanService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DeleteEmployee">
+      <soap:operation soapAction="http://tempuri.org/ILoanService/DeleteEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertCustomer">
+      <soap:operation soapAction="http://tempuri.org/ILoanService/InsertCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertEmployee">
+      <soap:operation soapAction="http://tempuri.org/ILoanService/InsertEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLoan">
+      <soap:operation soapAction="http://tempuri.org/ILoanService/InsertLoan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertLoanAllocation">
+      <soap:operation soapAction="http://tempuri.org/ILoanService/InsertLoanAllocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SpecifyCurrentBalance">
+      <soap:operation soapAction="http://tempuri.org/ILoanService/SpecifyCurrentBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomer">
+      <soap:operation soapAction="http://tempuri.org/ILoanService/UpdateCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEmployee">
+      <soap:operation soapAction="http://tempuri.org/ILoanService/UpdateEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LoanService">
+    <wsdl:port name="BasicHttpBinding_ILoanService" binding="tns:BasicHttpBinding_ILoanService">
+      <soap:address location="http://localhost:50780/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
