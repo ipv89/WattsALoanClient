@@ -71,6 +71,9 @@
 }
 
 /*--- Create_Employee css ---*/
+.createEmployeeMainContainer{
+    margin-bottom: 5%;
+}
 .createEmpContainer{
 
 }
@@ -91,4 +94,9 @@
 .btn-manager{
     float: right;
     margin-right: 6%;
+}
+
+/*--- edit_employee css ---*/
+.editEmpContainer{
+    margin-bottom: 5% !important;
 }
