@@ -55,9 +55,31 @@
 .managerOptionDivHolder{
     text-align: center;
 }
+.managerOptionDivHeader:hover{
+    background-color: #0466BF;
+}
 .managerOptionDivDesc{
     padding-top: 10% !important;
 }
 .managerOptionDivHolder i{
     font-size: 2.5em !important;
+    margin-top: 6%;
+}
+.managerOptionDivHolder i:hover{
+    cursor: pointer;
+    color: #039FDA;
+}
+
+/*--- Create_Employee css ---*/
+.createEmpContainer{
+    margin-top: 5%;
+}
+.createEmpContainerInner{
+    background-color:lightgray !important;
+    padding: 3%;
+    width: 50%;
+}
+.btn-manager{
+    float: right;
+    margin-right: 6%;
 }

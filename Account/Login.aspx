@@ -8,11 +8,16 @@
         <div class="container">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 loginForm">
                 <div class="col-lg-12 loginFormHeader">
-                    <hgroup class="title loginFormTitle">
-                        <h1><%: Title %>.</h1>
-                    </hgroup>
-                    <hr />
+                    <div class="col-lg-11">
+                        <hgroup class="title loginFormTitle">
+                            <h1><%: Title %>.</h1>
+                        </hgroup>
+                    </div>
+                    <div class="col-lg-1">
+                        <i class="fa fa-lock" style="font-size: 3em; margin-top: 8% !important;"></i>
+                    </div>
                 </div>
+                <hr />
                 <div class="col-lg-12 loginFormMainBody">
 
                     <%-- login form left side --%>
