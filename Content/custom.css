@@ -100,3 +100,19 @@
 .editEmpContainer{
     margin-bottom: 5% !important;
 }
+
+/*--- registration form css ---*/
+.registrationForm{
+    background-color: lightgray;
+    padding: 0px;
+    padding-bottom: 2%;
+    margin-top: 5%;
+}
+.registrationFormHeader{
+    background-color: #039FDA;
+}
+.btnRegister{
+    float: right;
+    margin-right: 1.2%;
+    margin-top: 2%;
+}
