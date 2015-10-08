@@ -2,14 +2,18 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="Server">
 
-    <div class="col-lg-12 createEmpContainer">
-        <div class="container createEmpContainerInner">
+    <div class="col-lg-12 createEmpContainerInnerHeader">
+        <h2>Create Employee</h2>
+    </div>
 
+    <div class="col-lg-12 createEmpContainer">
+
+        <div class="container createEmpContainerInner">
             <div class="col-lg-12">
 
                 <div class="col-lg-12">
                     <div class="col-lg-2">
-                        <label for="Number">Number:</label>
+                        <label for="Number">Number</label>
                     </div>
                     <div class="col-lg-10">
                         <asp:TextBox ID="Number" CssClass="form-control" runat="server"></asp:TextBox>
@@ -63,7 +67,7 @@
                 </div>
 
             </div>
-            <asp:Button CssClass="btn btn-success btn-manager btn-insert" type="submit" ID="insert" runat="server" Text="Insert" OnClick="new_employee" />
+            <asp:Button CssClass="btn btn-success btn-manager btn-insert" type="submit" ID="insert" runat="server" Text="Add Employee" OnClick="new_employee" />
         </div>
     </div>
 
@@ -71,35 +75,35 @@
 
         <%--<div class="col-md-2 col-md-offset-5">--%>
 
-            <form class="form-inline" role="form">
-                <%--<div class="form-group">
+        <form class="form-inline" role="form">
+            <%--<div class="form-group">
                     <label for="Number">Number:</label>
                     <asp:TextBox ID="Number" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>--%>
-                <%--<div class="form-group">
+            <%--<div class="form-group">
                     <label for="FirstName">First Name</label>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="E-mail address is required" Text="*" ControlToValidate="FirstName">
                     </asp:RequiredFieldValidator>
                     <asp:TextBox ID="FirstName" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>--%>
-                <%--<div class="form-group">
+            <%--<div class="form-group">
                     <label for="LastName">Last Name</label>
                     <asp:TextBox ID="LastName" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>--%>
 
 
-                <%--<div class="form-group">
+            <%--<div class="form-group">
                     <label for="emp_Title">Title</label>
                     <asp:TextBox ID="emp_Title" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>--%>
-               <%-- <div class="form-group">
+            <%-- <div class="form-group">
                     <label for="HourlySalary">Hourly Salary</label>
                     <asp:TextBox ID="HourlySalary" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>--%>
 
-                <%--<asp:Button CssClass="btn btn-success btn-manager btn-insert" type="submit" ID="insert" runat="server" Text="Insert" OnClick="new_employee" />--%>
-            </form>
-        </div>
+            <%--<asp:Button CssClass="btn btn-success btn-manager btn-insert" type="submit" ID="insert" runat="server" Text="Insert" OnClick="new_employee" />--%>
+        </form>
+    </div>
     <%--</div>--%>
 
     <asp:Label ID="Label1" runat="server" Text=""></asp:Label>

@@ -72,12 +72,21 @@
 
 /*--- Create_Employee css ---*/
 .createEmpContainer{
-    margin-top: 5%;
+
 }
 .createEmpContainerInner{
     background-color:lightgray !important;
-    padding: 3%;
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+    padding: 0.5%;
     width: 50%;
+}
+.createEmpContainerInnerHeader{
+    background-color: #039FDA;
+    padding: 1%;
+    width: 49.2%;
+    margin-top: 5%;
+    margin-left: 25.4%;
 }
 .btn-manager{
     float: right;
