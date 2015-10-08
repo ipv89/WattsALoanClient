@@ -7,6 +7,7 @@
             <div class="col-lg-6">
                 <div class="col-lg-12" style="background-color: #777; border-radius: 5px; padding: 5%;">
                     <h2>man</h2>
+                    <asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>
                 </div>
             </div>
             <div class="col-lg-6">
